@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For You</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400&display=swap');
+
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background: linear-gradient(180deg,#ffe4ec,#ffd1dc);
+  color:#5a2a3c;
+}
+.container{
+  max-width:600px;
+  margin:auto;
+  padding:30px 20px;
+}
+h1{
+  font-family:'Playfair Display',serif;
+  font-size:42px;
+  text-align:center;
+}
+.subtitle{
+  text-align:center;
+  font-size:16px;
+  opacity:0.8;
+}
+.card{
+  background:rgba(255,255,255,0.65);
+  border-radius:25px;
+  padding:25px;
+  margin:25px 0;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+p{
+  font-size:18px;
+  line-height:1.7;
+}
+.small{
+  font-size:15px;
+  opacity:0.8;
+}
+button{
+  display:block;
+  margin:30px auto;
+  background:#ff8fab;
+  color:white;
+  border:none;
+  padding:14px 30px;
+  border-radius:40px;
+  font-size:16px;
+}
+.hidden{display:none;}
+.footer{
+  text-align:center;
+  font-size:14px;
+  margin-top:40px;
+  opacity:0.7;
+}
+</style>
+</head>
+
+<body onclick="playSong()">
+<audio id="bgm" loop>
+  <source src="https://files.catbox.moe/xtf2mh.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+<h1>Hey, My Girl 💗</h1>
+<p class="subtitle">This page exists only because you exist.</p>
+
+<img src="photo.jpg" style="width:100%;border-radius:25px;margin:20px 0;">
+
+<div class="card">
+<p>
+<b>The first time you crossed my mind:</b><br>
+I didn’t realise it then.  
+But looking back… that moment quietly rewrote everything.
+</p>
+</div>
+
+<div class="card">
+<p>
+<b>What you did without trying:</b><br>
+You made days softer.  
+You made nights warmer.  
+You made silence feel comfortable instead of empty.
+</p>
+</div>
+
+<div class="card">
+<p>
+<b>What I admire about you:</b><br>
+Your laugh when you’re truly happy.  
+The way you care even when you pretend you don’t.  
+How you stay kind in a world that doesn’t always deserve it.
+</p>
+</div>
+
+<div class="card">
+<p>
+<b>What you mean to me:</b><br>
+You’re not a chapter.  
+You’re the calm paragraph I keep coming back to when everything feels loud.
+</p>
+</div>
+
+<div class="card">
+<p>
+<b>What I want you to remember:</b><br>
+On days you feel too much — you’re enough.  
+On days you doubt yourself — I don’t.
+</p>
+</div>
+
+<button onclick="openHeart()">Tap here gently 🌸</button>
+
+<div id="heart" class="card hidden">
+<p>
+I don’t promise a perfect story.  
+But I promise honesty, effort, and choosing you —  
+even on the ordinary days.
+</p>
+
+<p class="small">
+If you ever forget how loved you are…  
+come back to this page.
+</p>
+</div>
+
+<div class="footer">
+Made with all the feelings I don’t say out loud 💕
+</div>
+
+</div>
+
+<script>
+function openHeart(){
+  document.getElementById("heart").style.display="block";
+}
+function playSong(){
+  document.getElementById("bgm").play();
+}
+</script>
+
+</body>
+</html>
